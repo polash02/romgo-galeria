@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de Arte | ROMGO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f7f3;
+      color: #2e2e2e;
+    }
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ccc;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #cce0f4;
+      color: #2e2e2e;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      background: #d4af37;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 1rem;
+      border: 8px solid #eae4d9;
+    }
+    .about, .encargos, .contacto {
+      margin-top: 2rem;
+    }
+    footer {
+      background: #2e2e2e;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Galería ROMGO</h2>
+    <nav>
+      <a href="#galeria">Galería</a>
+      <a href="#encargos">Encargos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Donde cada trazo cuenta una historia</h1>
+    <button onclick="document.getElementById('galeria').scrollIntoView({behavior: 'smooth'})">Ver Galería</button>
+  </div>
+
+  <section id="galeria" class="gallery">
+    <h2>Obras Destacadas</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+      <img src="obra1.jpg" alt="Obra 1">
+      <img src="obra2.jpg" alt="Obra 2">
+      <img src="obra3.jpg" alt="Obra 3">
+      <img src="obra4.jpg" alt="Obra 4">
+      <img src="obra5.jpg" alt="Obra 5">
+      <img src="obra6.jpg" alt="Obra 6">
+      <img src="obra7.jpg" alt="Obra 7">
+      <img src="obra8.jpg" alt="Obra 8">
+      <img src="obra9.jpg" alt="Obra 9">
+      <img src="obra10.jpg" alt="Obra 10">
+      <img src="obra11.jpg" alt="Obra 11">
+      <img src="obra12.jpg" alt="Obra 12">
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <h2>Sobre el artista</h2>
+    <p>ROMGO ha dedicado su vida a capturar emociones en cada pincelada. Su trabajo en pintura sobre tela está inspirado en la belleza clásica y el poder de lo cotidiano.</p>
+  </section>
+
+  <section id="encargos" class="encargos">
+    <h2>Encargos Personalizados</h2>
+    <p>¿Tienes una idea en mente? ROMGO puede crearla para ti. Completa el formulario y te contactaremos para comenzar.</p>
+    <button onclick="location.href='https://tusitioweb.com/encargo'">Hacer un encargo</button>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>📧 contacto@galeriaromgo.com | 📱 +52 123 456 7890</p>
+    <p>Síguenos en redes sociales: Instagram | Facebook | TikTok</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Galería ROMGO - Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
